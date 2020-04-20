@@ -4,10 +4,16 @@ DOTPATH=~/dotfiles/
 DOTURL=https://github.com/mtiyz/dotfiles.git
 
 if type "apt" > /dev/null 2>&1; then
+  if type "sudo" > /dev/null 2>&1; then
+    apt install sudo
+  fi
   sudo apt install build-essential curl file git
 fi
 
 if type "yum" > /dev/null 2>&1; then
+  if type "sudo" > /dev/null 2>&1; then
+    yum install sudo
+  fi
   sudo yum groupinstall 'Development Tools'
   sudo yum install curl file git
   sudo yum install libxcrypt-compat
