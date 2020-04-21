@@ -29,7 +29,7 @@ if type "apk" > /dev/null 2>&1; then
   else
     apk add sudo
   fi
-  sudo apk add bash build-base curl file git gzip libc6-compat ncurses ruby ruby-dbm ruby-etc ruby-irb ruby-json
+  sudo apk add bash build-base curl file git gzip libc6-compat ncurses ruby ruby-dbm ruby-etc ruby-irb ruby-json ruby-bigdecimal
 fi
 
 if type "git" > /dev/null 2>&1; then
