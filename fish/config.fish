@@ -1,4 +1,4 @@
-set DOTPATH = ~/dotfiles
+set DOTPATH ~/dotfiles
 
 ## WSL
 switch (pwd)

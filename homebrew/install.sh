@@ -12,6 +12,14 @@ fi
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 
+## Not WSL
+if [ "`uname -a | grep 'microsoft'`" ]; then
+  :
+else
+  brew install docker
+  brew install docker-compose
+fi
+
 brew install git
 brew install gcc
 brew install sudo
