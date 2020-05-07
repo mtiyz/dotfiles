@@ -6,3 +6,5 @@ My dotfiles
 
 # Usage ✏️
 ```bash -c "$(curl -fsSL https://raw.githubusercontent.com/mtiyz/dotfiles/master/bin/install.sh)"```
+
+```bash -c "$(wget -qO - https://raw.githubusercontent.com/mtiyz/dotfiles/master/bin/install.sh)"```
