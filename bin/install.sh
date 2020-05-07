@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTPATH=~/dotfiles/
+DOTPATH=~/dotfiles
 DOTURL=https://github.com/mtiyz/dotfiles.git
 
 if type "apt" > /dev/null 2>&1; then
@@ -23,6 +23,7 @@ if type "yum" > /dev/null 2>&1; then
   sudo yum install texinfo -y
   sudo yum install libxcrypt-compat -y
   sudo yum install util-linux-user -y
+  sudo yum install perl-ExtUtils-MakeMaker -y
 fi
 
 if type "git" > /dev/null 2>&1; then
