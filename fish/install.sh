@@ -10,12 +10,16 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 
 fish -c $"fisher add rafaelrinaldi/pure"
 
-rm ~/.config/fish/config.fish
+if [ -f ~/.config/fish/config.fish ]; then
+  rm ~/.config/fish/config.fish
+fi
+
 cat $DOTPATH/fish/config.fish > ~/.config/fish/config.fish
 
-## RHEL
-if type "yum" > /dev/null 2>&1; then
-  echo `which fish` | sudo tee -a /etc/shells
+## RHEL and ArchLinux
+if [ type "yum" > /dev/null 2>&1 ] \
+  || [ type "pacman" > /dev/null 2>&1 ]; then
+    echo `which fish` | sudo tee -a /etc/shells
 fi
 
 sudo chsh -s `which fish`

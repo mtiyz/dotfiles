@@ -26,6 +26,21 @@ if type "yum" > /dev/null 2>&1; then
   sudo yum install perl-ExtUtils-MakeMaker -y
 fi
 
+if type "pacman" > /dev/null 2>&1; then
+  if type "sudo" > /dev/null 2>&1; then
+    :
+  else
+    pacman -S sudo --noconfirm
+  fi
+  sudo pacman -S curl --noconfirm
+  sudo pacman -S file --noconfirm
+  sudo pacman -S git --noconfirm
+  sudo pacman -S gcc --noconfirm
+  sudo pacman -S glibc --noconfirm
+  sudo pacman -S make --noconfirm
+  sudo pacman -S which --noconfirm
+fi
+
 if type "git" > /dev/null 2>&1; then
   if [ -d $DOTPATH ]; then
     cd $DOTPATH && git pull
