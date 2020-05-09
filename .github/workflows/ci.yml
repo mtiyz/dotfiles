@@ -18,6 +18,14 @@ jobs:
       - name: Install dotfiles
         run: bin/install.sh
 
+  archlinux:
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dotfiles
+        run: bin/install.sh
+
   macos:
     runs-on: macos-latest
     steps:
