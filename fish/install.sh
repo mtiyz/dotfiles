@@ -4,7 +4,11 @@ DOTPATH=~/dotfiles
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 
+echo 'Installing fish...'
+
 brew install fish
+
+echo 'Installing fisher...'
 
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
