@@ -18,7 +18,7 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 ## Not WSL
 shopt -s nocasematch
-if [ ! "`uname -a | grep 'microsoft'`" ]; then
+if [ ! "`uname -a | grep "microsoft"`" ]; then
   brew install docker
   brew install docker-compose
 fi
@@ -33,8 +33,8 @@ brew install fd
 if [ ! "`sudo fd`" ]; then
   touch ~/sudoers.tmp ~/sudoers.bak
   sudo cat /etc/sudoers > ~/sudoers.bak
-  sudo sed '/secure_path/s/^/# /g' /etc/sudoers > ~/sudoers.tmp
-  echo 'Defaults        env_keep +="PATH"' >> ~/sudoers.tmp
+  sudo sed "/secure_path/s/^/# /g" /etc/sudoers > ~/sudoers.tmp
+  echo "Defaults        env_keep +="PATH"" >> ~/sudoers.tmp
   full_path=$(find ~ -name sudoers.tmp)
   sudo bash -c "cat $full_path > /etc/sudoers"
   rm ~/sudoers.tmp ~/sudoers.bak

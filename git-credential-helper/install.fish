@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-if uname -a | grep 'microsoft'
+if uname -a | grep "microsoft"
   ## WSL
   git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe"
   exit 0

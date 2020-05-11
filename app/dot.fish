@@ -3,10 +3,10 @@
 set all_argv (count $argv)
 
 switch $argv[1]
-case 'update'
+case "update"
   $DOTPATH/app/update.fish
-case 'upgrade'
+case "upgrade"
   $DOTPATH/app/upgrade.fish
-case 'install'
+case "install"
   $DOTPATH/app/install.fish $argv[2..$all_argv]
 end

@@ -2,7 +2,7 @@ set DOTPATH ~/dotfiles
 
 ## WSL
 switch (pwd)
-case '/mnt/c/Users/*'
+case "/mnt/c/Users/*"
   cd
 end
 
@@ -20,11 +20,11 @@ set fish_color_host f5e751
 set fish_color_param f5e751
 
 # Dot command
-alias dot='$DOTPATH/app/dot.fish'
+alias dot="$DOTPATH/app/dot.fish"
 
 ## Command alias
-alias ls='exa'
-alias g='git'
+alias ls="exa"
+alias g="git"
 
 ## cd + ls
 function cd
