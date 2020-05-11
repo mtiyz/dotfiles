@@ -30,7 +30,7 @@ brew install bat
 brew install exa
 brew install fd
 
-if [ ! $(sudo fd) ]; then
+if [ ! "`sudo fd`" ]; then
   touch ~/sudoers.tmp ~/sudoers.bak
   sudo cat /etc/sudoers > ~/sudoers.bak
   sudo sed '/secure_path/s/^/# /g' /etc/sudoers > ~/sudoers.tmp
