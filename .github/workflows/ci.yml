@@ -10,7 +10,7 @@ jobs:
       - name: Install dotfiles
         run: bin/install.sh
       - name: "Test for the 'dot' commands"
-        run: ./test.fish
+        run: ./test.sh
 
   centos:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
       - name: Install dotfiles
         run: bin/install.sh
       - name: "Test for the 'dot' commands"
-        run: ./test.fish
+        run: ./test.sh
 
   archlinux:
     runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
       - name: Install dotfiles
         run: bin/install.sh
       - name: "Test for the 'dot' commands"
-        run: ./test.fish
+        run: ./test.sh
 
   macos:
     runs-on: macos-latest
@@ -39,4 +39,4 @@ jobs:
       - name: Install dotfiles
         run: bin/install.sh
       - name: "Test for the 'dot' commands"
-        run: ./test.fish
+        run: ./test.sh
