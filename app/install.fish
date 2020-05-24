@@ -7,4 +7,6 @@ case "node"
   $DOTPATH/node/install.fish
 case "rust"
   $DOTPATH/rust/install.fish
+case "deno"
+  $DOTPATH/deno/install.fish
 end

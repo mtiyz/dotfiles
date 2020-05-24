@@ -8,5 +8,5 @@ case "update"
 case "upgrade"
   $DOTPATH/app/upgrade.fish
 case "install"
-  $DOTPATH/app/install.fish $argv[2..$all_argv]
+  $DOTPATH/app/install.fish $argv[2]
 end

@@ -6,10 +6,14 @@ case "/mnt/c/Users/*"
   cd
 end
 
+## Deno
+set DENO_INSTALL $HOME/.deno
+
 ## Environment variable
 set -x GPG_TTY (tty)
 set -x PATH $HOME/.linuxbrew/bin $PATH
 set -x PATH /usr/local/opt/ruby/bin $PATH
+set -x PATH $DENO_INSTALL/bin $PATH
 
 source $HOME/.cargo/env
 
