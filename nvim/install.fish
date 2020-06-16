@@ -8,4 +8,4 @@ sh ./installer.sh ~/.cache/dein
 rm ./install.sh
 
 echo 'Installing Neovim configs...'
-cp $DOTPATH/configs/nvim/ ~/.config/nvim/
+ln -s $DOTPATH/configs/nvim/ ~/.config/nvim/

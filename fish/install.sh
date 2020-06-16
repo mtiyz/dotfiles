@@ -18,7 +18,7 @@ if [ -f ~/.config/fish/config.fish ]; then
   rm ~/.config/fish/config.fish
 fi
 
-cat $DOTPATH/fish/config.fish > ~/.config/fish/config.fish
+ln -s $DOTPATH/fish/config.fish ~/.config/fish/config.fish
 
 sudo bash -c "echo `which fish` | sudo tee -a /etc/shells"
 
