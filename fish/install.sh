@@ -2,7 +2,7 @@
 
 DOTPATH=~/dotfiles
 
-export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 echo 'Installing fish...'
 
@@ -18,7 +18,7 @@ if [ -f ~/.config/fish/config.fish ]; then
   rm ~/.config/fish/config.fish
 fi
 
-ln -s $DOTPATH/fish/config.fish ~/.config/fish/config.fish
+ln -s $DOTPATH/configs/fish/config.fish ~/.config/fish/config.fish
 
 sudo bash -c "echo `which fish` | sudo tee -a /etc/shells"
 

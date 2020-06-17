@@ -2,22 +2,22 @@
 
 sudo cat /dev/null
 
-if [ -d $HOME/.linuxbrew ]; then
+if [ -d /home/linuxbrew ]; then
   :
 else
   echo 'Installing Homebrew...'
-  git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
-  mkdir ~/.linuxbrew/bin
-  ln -sfv ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+  git clone https://github.com/Homebrew/brew /home/linuxbrew/.linuxbrew/Homebrew
+  mkdir /home/linuxbrew/.linuxbrew/bin
+  ln -sfv /home/linuxbrew/.linuxbrew/Homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin
 fi
 
 if [ -f $HOME/.profile ]; then
-  sed -e '$a export PATH="$HOME/.linuxbrew/bin:$PATH"' $HOME/.profile -i
+  sed -e '$a export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' $HOME/.profile -i
 else
-  echo export PATH="$HOME/.linuxbrew/bin:$PATH" > $HOME/.profile
+  echo export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" > $HOME/.profile
 fi
 
-export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 echo 'Installing tools...'
 

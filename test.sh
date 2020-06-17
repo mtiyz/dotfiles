@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 fish -c "dot update"
 fish -c "dot upgrade"
