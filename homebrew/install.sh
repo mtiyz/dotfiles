@@ -2,25 +2,25 @@
 
 sudo cat /dev/null
 
-if [ -d /home/linuxbrew ]; then
+if [ -d $HOME ]; then
   :
 else
   echo 'Installing Homebrew...'
-  sudo git clone https://github.com/Homebrew/brew /home/linuxbrew/.linuxbrew/Homebrew
+  sudo git clone https://github.com/Homebrew/brew $HOME/.linuxbrew/Homebrew
   if [ "$(uname)" == 'Darwin'  ]; then
     sed -i 's/\/home/#\/home/g' /etc/auto_master
   fi
-  sudo mkdir /home/linuxbrew/.linuxbrew/bin
-  sudo ln -sfv /home/linuxbrew/.linuxbrew/Homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin
+  sudo mkdir $HOME/.linuxbrew/bin
+  sudo ln -sfv $HOME/.linuxbrew/Homebrew/bin/brew $HOME/.linuxbrew/bin
 fi
 
 if [ -f $HOME/.profile ]; then
-  sed -e '$a export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' $HOME/.profile -i
+  sed -e '$a export PATH="$HOME/.linuxbrew/bin:$PATH"' $HOME/.profile -i
 else
-  echo export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" > $HOME/.profile
+  echo export PATH="$HOME/.linuxbrew/bin:$PATH" > $HOME/.profile
 fi
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 echo 'Installing tools...'
 

@@ -2,7 +2,7 @@
 
 DOTPATH=~/dotfiles
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 echo 'Installing fish...'
 

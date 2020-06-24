@@ -62,4 +62,4 @@ fi
 cd $DOTPATH
 /bin/bash ./homebrew/install.sh
 /bin/bash ./fish/install.sh
-/home/linuxbrew/.linuxbrew/bin/fish
+$HOME/.linuxbrew/bin/fish
