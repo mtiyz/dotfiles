@@ -8,9 +8,6 @@ source ~/.config/nvim/plugins/lightline.rc.vim
 """
 
 [[plugins]]
-repo = "sheerun/vim-polyglot"
-
-[[plugins]]
 repo = "tpope/vim-surround"
 
 [[plugins]]
@@ -53,3 +50,7 @@ repo = "Yggdroot/indentLine"
 hook_add = """
 source ~/.config/nvim/plugins/indentLine.rc.vim
 """
+
+[[plugins]]
+repo = "dag/vim-fish"
+

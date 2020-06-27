@@ -9,6 +9,6 @@ rm ./install.sh
 
 echo 'Installing Neovim configs...'
 if test -d ~/.config/nvim
-  rm ~/.config/nvim
+  rm -r ~/.config/nvim
 end
-ln -s $DOTPATH/configs/nvim/ ~/.config/nvim/
+ln -s $DOTPATH/configs/nvim/ ~/.config/
