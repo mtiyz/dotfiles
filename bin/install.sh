@@ -64,3 +64,4 @@ cd $DOTPATH
 /bin/bash ./fish/install.sh
 /bin/bash ./tmux/install.sh
 /bin/bash ./anyenv/install.sh
+ln -s configs/.gitconfig ~/.gitconfig
