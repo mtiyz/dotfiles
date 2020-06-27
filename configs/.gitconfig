@@ -1,0 +1,9 @@
+[core]
+	excludesfile = /home/noroz/dotfiles/configs/.gitignore_global
+[user]
+	email = 54768914+norozic@users.noreply.github.com
+	name = noroz
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+[ghq]
+  root = ~/repos
