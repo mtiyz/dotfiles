@@ -64,3 +64,4 @@ cd $DOTPATH
 /bin/bash ./fish/install.sh
 /bin/bash ./tmux/install.sh
 ln -s configs/.gitconfig ~/.gitconfig
+ln -s configs/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml

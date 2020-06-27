@@ -1,0 +1,18 @@
+colors:
+  primary:
+    background: '#222222'
+
+window:
+  startup_mode: Fullscreen
+
+font:
+  normal:
+    family: "JetBrains Mono"
+    style: Regular
+  bold:
+    family: "JetBrains Mono"
+    style: Bold
+  italic:
+    family: "JetBrains Mono"
+    style: Italic
+  size: 11
