@@ -22,7 +22,6 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 echo 'Installing tools...'
 
 brew install git
-brew install gcc
 brew install curl
 brew install bat
 brew install exa
@@ -33,6 +32,8 @@ brew install ghq
 brew install fzf
 brew install anyenv
 brew install starship
+brew install python
+brew install neofetch
 
 if [ ! "`sudo fd`" ]; then
   touch ~/sudoers.tmp ~/sudoers.bak
