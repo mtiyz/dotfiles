@@ -1,60 +1,52 @@
 [[plugins]]
-repo = "cocopon/iceberg.vim"
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+colorscheme iceberg
+syntax on
+'''
 
 [[plugins]]
-repo = "itchyny/lightline.vim"
-hook_add = """
-source ~/.config/nvim/plugins/lightline.rc.vim
-"""
+repo = 'itchyny/lightline.vim'
+hook_add = 'source ~/.config/nvim/plugins/lightline.rc.vim'
 
 [[plugins]]
-repo = "tpope/vim-surround"
+repo = 'tpope/vim-surround'
 
 [[plugins]]
-repo = "tpope/vim-fugitive"
+repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = "airblade/vim-gitgutter"
+repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
-on_i = 1
-merged = '0'
-hook_add = """
-source ~/.config/nvim/plugins/coc.rc.vim
-"""
+merged = 0
 
 [[plugins]]
-repo = "elzr/vim-json"
-hook_add = """
-source ~/.config/nvim/plugins/vim-json.rc.vim
-"""
+repo = 'elzr/vim-json'
+hook_add = 'source ~/.config/nvim/plugins/vim-json.rc.vim'
 
 [[plugins]]
-repo = "junegunn/fzf"
+repo = 'junegunn/fzf'
 
 [[plugins]]
-repo = "dense-analysis/ale"
-hook_add = """
-source ~/.config/nvim/plugins/ale.rc.vim
-"""
+repo = 'dense-analysis/ale'
+hook_add = 'source ~/.config/nvim/plugins/ale.rc.vim'
 
 [[plugins]]
-repo = "cohama/lexima.vim"
+repo = 'cohama/lexima.vim'
 
 [[plugins]]
-repo = "ntpeters/vim-better-whitespace"
+repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
-repo = "editorconfig/editorconfig-vim"
+repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
-repo = "Yggdroot/indentLine"
-hook_add = """
-source ~/.config/nvim/plugins/indentLine.rc.vim
-"""
+repo = 'Yggdroot/indentLine'
+hook_add = 'source ~/.config/nvim/plugins/indentLine.rc.vim'
 
 [[plugins]]
-repo = "dag/vim-fish"
+repo = 'dag/vim-fish'
 
