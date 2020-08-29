@@ -21,19 +21,7 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 echo 'Installing tools...'
 
-brew install git
-brew install curl
-brew install bat
-brew install exa
-brew install fd
-brew tap cjbassi/ytop
-brew install ytop
-brew install ghq
-brew install fzf
-brew install anyenv
-brew install starship
-brew install python
-brew install neofetch
+brew bundle --file '~/dotfiles/configs/Brewfile'
 
 if [ ! "`sudo fd`" ]; then
   touch ~/sudoers.tmp ~/sudoers.bak
@@ -45,4 +33,3 @@ if [ ! "`sudo fd`" ]; then
   rm ~/sudoers.tmp ~/sudoers.bak
 fi
 
-fish -c 'git config --global core.excludesfile $DOTPATH/configs/.gitignore_global'
