@@ -17,7 +17,7 @@ if ! sudo grep zsh /etc/shells; then
   sudo bash -c "echo `which zsh` | sudo tee -a /etc/shells"
 fi
 
-if [ ! $SHELL = $(which tmux) ]; then
+if [ ! "$SHELL" = $(which zsh) ]; then
   echo "You need to change the default shell to $(which zsh)"
 fi
 

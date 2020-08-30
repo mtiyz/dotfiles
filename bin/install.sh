@@ -1,7 +1,5 @@
 #!/bin/bash
-
-DOTPATH=~/dotfiles
-DOTURL=https://github.com/norozic/dotfiles.git
+DOTPATH=~/dotfiles DOTURL=https://github.com/norozic/dotfiles.git
 
 if type "apt" > /dev/null 2>&1; then
   if type "sudo" > /dev/null 2>&1; then
@@ -65,4 +63,5 @@ cd $DOTPATH
 /bin/bash ./tmux/install.sh
 
 /bin/bash $DOTPATH/bin/link.sh $DOTPATH/configs/.gitconfig ~/.gitconfig
-/bin/bash $DOTPATH/bin/link.sh $DOTPATH/configs/alacritty/ ~/.config/alacritty/
+/bin/bash $DOTPATH/bin/link.sh $DOTPATH/configs/alacritty/ ~/.config/
+/bin/bash $DOTPATH/bin/link.sh $DOTPATH/configs/i3/ ~/.config/
