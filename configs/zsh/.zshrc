@@ -33,6 +33,9 @@ alias tm="tmux new-session \; source-file ~/.tmux.session.conf"
 # Use vim keybind
 bindkey -v
 
+# Change default editor to Neovim
+export EDITOR=nvim
+
 function ghq-fzf() {
   local src=$(ghq list | fzf)
   if [ -n "$src" ]; then
