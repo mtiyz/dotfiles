@@ -1,12 +1,4 @@
 [[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-hook_add = 'source ~/.config/nvim/plugins/vim-lsp.rc.vim'
-
-[[plugins]]
-repo = 'mattn/vim-lsp-settings'
-hook_add = 'source ~/.config/nvim/plugins/vim-lsp-settings.rc.vim'
-
-[[plugins]]
 repo = 'junegunn/fzf.vim'
 on_cmd = [
     'Files',

@@ -10,6 +10,14 @@ repo = 'itchyny/lightline.vim'
 hook_add = 'source ~/.config/nvim/plugins/lightline.rc.vim'
 
 [[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = 'source ~/.config/nvim/plugins/vim-lsp.rc.vim'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+hook_add = 'source ~/.config/nvim/plugins/vim-lsp-settings.rc.vim'
+
+[[plugins]]
 repo = 'tpope/vim-surround'
 
 [[plugins]]
