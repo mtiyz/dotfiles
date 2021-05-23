@@ -47,10 +47,11 @@ vim.api.nvim_set_keymap('', '<Space>', '<Leader>', {})
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'O', [[:<C-u>call append(expand("."), '')<Cr>j]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gf', ':<C-u>Format<Cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'gq', ':<C-u>CocFix<Cr>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 's', ':<C-u>HopChar2<Cr>', { noremap = true, silent = true })
 
 -- fzf.vim
 vim.api.nvim_set_keymap('n', '<Leader>f', ':<C-u>GFiles<Cr>', { noremap = true, silent = true })
 
-
-vim.cmd[[set shiftwidth=2]]
+vim.cmd[[set shiftwidth=2
+set expandtab]]
