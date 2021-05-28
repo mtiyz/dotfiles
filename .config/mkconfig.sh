@@ -2,6 +2,9 @@
 
 CONFIG=~/.config/i3/config
 [ -e "$CONFIG" ] && rm -f $CONFIG
+if [ ! "$(cat ~/.config/i3/config.base)" ]; then
+	ln -s ~/.config/sway/config.base ~/.config/i3/config.base
+fi
 cat $CONFIG.*  >> $CONFIG
 chmod 444 $CONFIG
 
